@@ -13,8 +13,7 @@ import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
 import ListingReservation from "./ListingReservation";
-import { createPaymentSession, createReservation } from "@/services/reservation";
-
+import { createReservation } from "@/services/reservation";
 const initialDateRange = {
   startDate: new Date(),
   endDate: new Date(),
@@ -118,3 +117,4 @@ const ListingClient: React.FC<ListingClientProps> = ({
 };
 
 export default ListingClient;
+
